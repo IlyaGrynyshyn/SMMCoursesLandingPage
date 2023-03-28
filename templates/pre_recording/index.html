@@ -1,0 +1,385 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>SMM&Psychology</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;600;700&family=Inter:wght@300;400;600&display=swap"
+            rel="stylesheet"
+    />
+
+    <!-- Links -->
+
+    <link rel="stylesheet" href="{% static 'pre_recording/css/style.css' %}"/>
+
+</head>
+<body>
+<header class="header" id="header">
+    <div class="container">
+        <nav class="navigation">
+            <a href="#" class="logo">SMM&Psychology.</a>
+            <div class="market-launch">
+                <img
+                        src="{% static 'pre_recording/img/calendar.svg' %}"
+                        alt="Calendar Icon"
+                        class="market-launch__icon"
+                />
+                <p class="market-launch__text">
+                    Старт продажiв: <span class="market-launch__date">19 квiтня</span>
+                </p>
+            </div>
+            <a href="#" class="navigation-instagram">
+                <img
+                        src="{% static 'pre_recording/img/inst.svg' %}"
+                        alt="Instagram Icon"
+                        class="navigation-instagram__icon"
+                />
+                <p class="navigation-instagram__nickname">@example</p>
+            </a>
+        </nav>
+        <div class="firsct-screen">
+            <div class="first-screen__main">
+                <p class="first-screen__course">курс</p>
+                <h1 class="first-screen__title">SMM& <br> Psychology.</h1>
+                <a href="#feedback" class="first-screen__btn">Заповнити анкету*</a>
+                <p class="first-screen__postscriptum">
+                    Предзапис безкоштовний та без зобов’язань.
+                </p>
+            </div>
+            <img
+                    src="{% static 'pre_recording/img/first-screen-photo.png' %}"
+                    alt="Photo Woman"
+                    class="first-screen__img"
+            />
+        </div>
+    </div>
+</header>
+
+<section class="why-register">
+    <div class="container">
+        <h4 class="section-subtitle">Для чого менi заповнювати</h4>
+        <h2 class="section-title">Анкету?</h2>
+        <div class="cards">
+            <div class="cards__item">
+                <img src="{% static 'pre_recording/img/why-register1.png' %}" alt="Photo" class="cards__img"/>
+                <div class="cards__title">
+                    <img src="{% static 'pre_recording/img/check.svg' %}" alt="Check Icon" class="cards__icon"/>
+                    <h3>Без зобов’язань</h3>
+                </div>
+                <p class="cards__text">
+                    Не змушує нічого купувати, але гарантує місце на курсі
+                    SMM&Psychology за найнижчою ціною.
+                </p>
+            </div>
+            <div class="cards__item">
+                <img src="{% static 'pre_recording/img/why-register2.png' %}" alt="Photo" class="cards__img"/>
+                <div class="cards__title">
+                    <img src="{% static 'pre_recording/img/check.svg' %}" alt="Check Icon" class="cards__icon"/>
+                    <h3>Найшвидшi обнови</h3>
+                </div>
+                <p class="cards__text">
+                    Ви перші отримаєте всі найважливіші новини про старт семiнару,
+                    анонси та знижки.
+                </p>
+            </div>
+            <div class="cards__item">
+                <img src="{% static 'pre_recording/img/why-register3.png' %}" alt="Photo" class="cards__img"/>
+                <div class="cards__title">
+                    <img src="{% static 'pre_recording/img/check.svg' %}" alt="Check Icon" class="cards__icon"/>
+                    <h3>Гарантоване мiсце</h3>
+                </div>
+                <p class="cards__text">
+                    Охочих значно більше, ніж місць на програмі. Заповнюючи анкету, ви
+                    точно будете впевнені, що потрапите на потік.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="banner">
+    <div class="container">
+        <div class="banner__wrapper">
+            <img src="{% static 'pre_recording/img/banner-photo.png' %}" alt="Photo Woman" class="banner__photo">
+            <div class="banner__main">
+                <p class="banner__text">
+                    Ви отримаєте доступ до закритого Телеграм-каналу, де буде внутрішня кухня всього нашого запуску
+                    з інсайтами, секретами та користю
+                </p>
+                <img src="{% static 'pre_recording/img/arrow-down.svg' %}" alt="Arrow Down Icon" class="banner__arrow">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="feedback" id="feedback">
+    <div class="container">
+        <div class="feedback__wrapper">
+            <h4 class="section-subtitle feedback__subtitle">Заповнiть форму, щоб потрапити на</h4>
+            <h2 class="section-title feedback__title">Передзапис</h2>
+            <form class="form" method="POST" id="form-rescheduling">
+                {% csrf_token %}
+                <div class="form__list">
+                    <div class="form__item">
+                        <label for="name" class="form__label">Ваше Iм'я</label>
+                        <input type="text" id="name" name='name' placeholder="ПIБ" class="form__input">
+                    </div>
+
+                    <div class="form__item">
+                        <label for="phone" class="form__label">Номер телефону</label>
+                        <input type="tel" id="phone" name='phone' placeholder="0 9X XXX XX XX" class="form__input">
+                    </div>
+
+                    <div class="form__item">
+                        <label for="email" class="form__label">Пошта</label>
+                        <input type="email" id="email" name='email' placeholder="Email" class="form__input">
+                    </div>
+                </div>
+                <input type="submit" class="form__submit" value="ВIДПРАВИТИ">
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="reviews">
+    <div class="container">
+        <h4 class="section-subtitle">Вiдгуки задоволенних учнiв</h4>
+        <h2 class="section-title">про нас</h2>
+        <div class="slider__wrapper">
+            <div class="slider">
+                <div class="slider__item">
+                    <img src="{% static 'pre_recording/img/quote.png' %}" alt="quote icon" class="slider__quote">
+                    <p class="slider__text">
+                        Lorem ipsum dolor sit amet consectetur. Sed viverra cras augue sit faucibus malesuada volutpat.
+                        Leo egestas tellus sagittis cursus. Posuere euismod nunc scelerisque tortor at sit tellus ut.
+                        Diam pharetra sed commodo nec ornare sit.
+                    </p>
+                    <div class="slider__user">
+                        <img src="{% static 'pre_recording/img/user1.png' %}" alt="User Photo" class="slider__photo">
+                        <div class="slider__bottom">
+                            <div class="slider__info">
+                                <h4 class="slider__name">Amira Komstantinova</h4>
+                                <div class="slider__socials">
+                                    <a href="#" class="slider__social-link"><img
+                                            src="{% static 'pre_recording/img/inst.svg' %}" alt="Instagram Icon"></a>
+                                    <a href="#" class="slider__social-link"><img
+                                            src="{% static 'pre_recording/img/facebook.svg' %}" alt="facebook icon"></a>
+                                </div>
+                            </div>
+                            <p class="slider__job-position">SMM specialist</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <img src="{% static 'pre_recording/img/quote.png' %}" alt="quote icon" class="slider__quote">
+                    <p class="slider__text">
+                        Convallis euismod fermentum in dolor purus mauris ultricies scelerisque. Feugiat sodales sit
+                        augue at mattis odio augue nunc ornare. Eu eget enim viverra varius sed arcu condimentum
+                        dictumst sem.
+                    </p>
+                    <div class="slider__user">
+                        <img src="{% static 'pre_recording/img/user2.png' %}" alt="User Photo" class="slider__photo">
+                        <div class="slider__bottom">
+                            <div class="slider__info">
+                                <h4 class="slider__name">Michael K.</h4>
+                                <div class="slider__socials">
+                                    <a href="#" class="slider__social-link"><img
+                                            src="{% static 'pre_recording/img/inst.svg' %}" alt="Instagram Icon"></a>
+                                    <a href="#" class="slider__social-link"><img
+                                            src="{% static 'pre_recording/img/facebook.svg' %}" alt="facebook icon"></a>
+                                </div>
+                            </div>
+                            <p class="slider__job-position">SMM specialist</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <img src="{% static 'pre_recording/img/quote.png' %}" alt="quote icon" class="slider__quote">
+                    <p class="slider__text">
+                        Lorem ipsum dolor sit amet consectetur. Sed viverra cras augue sit faucibus malesuada volutpat.
+                        Leo egestas tellus sagittis cursus. Posuere euismod nunc scelerisque tortor at sit tellus ut.
+                        Diam pharetra sed commodo nec ornare sit.
+                    </p>
+                    <div class="slider__user">
+                        <img src="{% static 'pre_recording/img/user1.png' %}" alt="User Photo" class="slider__photo">
+                        <div class="slider__bottom">
+                            <div class="slider__info">
+                                <h4 class="slider__name">Amira Komstantinova</h4>
+                                <div class="slider__socials">
+                                    <a href="#" class="slider__social-link"><img
+                                            src="{% static 'pre_recording/img/inst.svg' %}" alt="Instagram Icon"></a>
+                                    <a href="#" class="slider__social-link"><img
+                                            src="{% static 'pre_recording/img/facebook.svg' %}" alt="facebook icon"></a>
+                                </div>
+                            </div>
+                            <p class="slider__job-position">SMM specialist</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <img src="{% static 'pre_recording/img/quote.png' %}" alt="quote icon" class="slider__quote">
+                    <p class="slider__text">
+                        Convallis euismod fermentum in dolor purus mauris ultricies scelerisque. Feugiat sodales sit
+                        augue at mattis odio augue nunc ornare. Eu eget enim viverra varius sed arcu condimentum
+                        dictumst sem.
+                    </p>
+                    <div class="slider__user">
+                        <img src="{% static 'pre_recording/img/user2.png' %}" alt="User Photo" class="slider__photo">
+                        <div class="slider__bottom">
+                            <div class="slider__info">
+                                <h4 class="slider__name">Michael K.</h4>
+                                <div class="slider__socials">
+                                    <a href="#" class="slider__social-link"><img
+                                            src="{% static 'pre_recording/img/inst.svg' %}" alt="Instagram Icon"></a>
+                                    <a href="#" class="slider__social-link"><img
+                                            src="{% static 'pre_recording/img/facebook.svg' %}" alt="facebook icon"></a>
+                                </div>
+                            </div>
+                            <p class="slider__job-position">SMM specialist</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <img src="{% static 'pre_recording/img/quote.png' %}" alt="quote icon" class="slider__quote">
+                    <p class="slider__text">
+                        Lorem ipsum dolor sit amet consectetur. Sed viverra cras augue sit faucibus malesuada volutpat.
+                        Leo egestas tellus sagittis cursus. Posuere euismod nunc scelerisque tortor at sit tellus ut.
+                        Diam pharetra sed commodo nec ornare sit.
+                    </p>
+                    <div class="slider__user">
+                        <img src="{% static 'pre_recording/img/user1.png' %}" alt="User Photo" class="slider__photo">
+                        <div class="slider__bottom">
+                            <div class="slider__info">
+                                <h4 class="slider__name">Amira Komstantinova</h4>
+                                <div class="slider__socials">
+                                    <a href="#" class="slider__social-link"><img
+                                            src="{% static 'pre_recording/img/inst.svg' %}" alt="Instagram Icon"></a>
+                                    <a href="#" class="slider__social-link"><img
+                                            src="{% static 'pre_recording/img/facebook.svg' %}" alt="facebook icon"></a>
+                                </div>
+                            </div>
+                            <p class="slider__job-position">SMM specialist</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <img src="{% static 'pre_recording/img/quote.png' %}" alt="quote icon" class="slider__quote">
+                    <p class="slider__text">
+                        Convallis euismod fermentum in dolor purus mauris ultricies scelerisque. Feugiat sodales sit
+                        augue at mattis odio augue nunc ornare. Eu eget enim viverra varius sed arcu condimentum
+                        dictumst sem.
+                    </p>
+                    <div class="slider__user">
+                        <img src="{% static 'pre_recording/img/user2.png' %}" alt="User Photo" class="slider__photo">
+                        <div class="slider__bottom">
+                            <div class="slider__info">
+                                <h4 class="slider__name">Michael K.</h4>
+                                <div class="slider__socials">
+                                    <a href="#" class="slider__social-link"><img
+                                            src="{% static 'pre_recording/img/inst.svg' %}" alt="Instagram Icon"></a>
+                                    <a href="#" class="slider__social-link"><img
+                                            src="{% static 'pre_recording/img/facebook.svg' %}" alt="facebook icon"></a>
+                                </div>
+                            </div>
+                            <p class="slider__job-position">SMM specialist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-prev slider__arrow">
+                <img src="{% static 'pre_recording/img/arrow-left.svg' %}" alt="Left Arrow Icon" class="slider__left">
+            </div>
+            <div class="slider-next slider__arrow">
+                <img src="{% static 'pre_recording/img/arrow-right.svg' %}" alt="Right Arrow Icon"
+                     class="slider__right">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer" id="footer">
+    <div class="container">
+        <p class="footer__rigths">
+            ©SMM&Psychology.
+            <br>
+            2023, Всі права захищені
+        </p>
+        <div class="footer__socidals">
+            <a href="#" class="footer__link">
+                <img src="{% static 'pre_recording/img/inst.svg' %}" alt="Instagram Icon" class="footer__icon">
+            </a>
+            <a href="#" class="footer__link">
+                <img src="{% static 'pre_recording/img/facebook.svg' %}" alt="facebook Icon" class="footer__icon">
+            </a>
+            <a href="#" class="footer__link">
+                <img src="{% static 'pre_recording/img/telegram.svg' %}" alt="telegram Icon" class="footer__icon">
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+<!-- PopUp -->
+<div class="popup__wrapper">
+    <div class="popup">
+        <img src="{% static 'pre_recording/img/close.svg' %}" alt="Close Icon" class="popup__close">
+        <h2 class="popup__title">
+            Дані успішно передані!
+        </h2>
+        <p class="popup__text">
+            Тепер можете приєднатись
+            до закритого телеграм каналу
+        </p>
+        <a href="#" class="popup__btn">
+            <img src="{% static 'pre_recording/img/popup-tg.svg' %}" alt="Telegram Icon" class="poptp__icon">
+            <p>enjoy</p>
+        </a>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="{% static 'pre_recording/js/jquery-3.6.4.min.js' %}"></script>
+{#<script src="https://code.jquery.com/jquery-3.6.4.slim.js"></script>#}
+<script type="text/javascript" src="{% static 'pre_recording/js/slick.min.js' %}"></script>
+<script src="{% static 'pre_recording/js/script.js' %}"></script>
+<script>
+    $(document).ready(function () {
+        $("#form-rescheduling").submit(function (event) {
+            event.preventDefault();
+            let formData = {
+                'name': $("#name").val(),
+                'phone': $("#phone").val(),
+                'email': $("#email").val()
+            };
+            $.ajax({
+                url: 'ajax-form/',
+                type: 'POST',
+                data: formData,
+                cache: false,
+                // encode: true,
+                beforeSend: function (xhr, settings) {
+                    xhr.setRequestHeader("X-CSRFToken", "{{ csrf_token }}");
+                }, // змінна csrf_token містить CSRF токен
+                success: function (data) {
+                    console.log('Дані про продукт успішно відправлені!');
+                    // Form
+                    const submitForm = document.querySelector('.form__submit')
+                    submitForm.addEventListener('click', function (event) {
+                        document.querySelector('body').style.overflow = 'hidden'
+                        popup.style.display = 'block'
+                    })
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>
