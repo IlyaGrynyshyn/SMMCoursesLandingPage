@@ -327,6 +327,7 @@ section {
 .form__item {
   width: auto;
   display: block;
+
 }
 
 .form__item:not(:last-child) {
@@ -450,7 +451,7 @@ section {
 
 .slider__name {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 48px;
   line-height: 36px;
 }
 
@@ -1019,4 +1020,8 @@ section {
     font-size: 20px;
     margin-bottom: 20px;
   }
+}
+
+#feedback {
+  scroll-behavior: smooth;
 }

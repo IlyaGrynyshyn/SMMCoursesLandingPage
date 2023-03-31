@@ -107,11 +107,11 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'uk'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Kiev'
 
-USE_I18N = True
-
-USE_TZ = True
+DATETIME_FORMAT = '%H:%M:%S %d-%m-%Y'
+USE_I18N = False
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)

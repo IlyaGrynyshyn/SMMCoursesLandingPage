@@ -42,7 +42,7 @@ closeBtn.addEventListener('click', () => {
     popup.style.display = 'none'
 })
 
-Form
+// Form
 const submitForm = document.querySelector('.form__submit')
 submitForm.addEventListener('click', function (event) {
     document.querySelector('body').style.overflow = 'hidden'
@@ -57,3 +57,21 @@ if (windowWidth < 1455) {
     document.querySelector('.first-screen__course').innerText = 'передзапис на курс'
     document.querySelector('.first-screen__btn').innerText = 'Передзапис'
 }
+
+// scroll to feedback
+
+function scrollTo(element) {
+    windowWidth.scroll({
+        left: 0,
+        top: element.offsetTop,
+        behavior: 'smooth'
+    })
+}
+
+var btn = document.querySelector('.first-screen__btn');
+var feedback = document.querySelector('#feedback');
+console.log(btn)
+btn.addEventListener('click', function(event) {
+  event.preventDefault();
+  feedback.scrollIntoView({ behavior: 'smooth' });
+});
