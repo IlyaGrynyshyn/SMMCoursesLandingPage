@@ -751,7 +751,7 @@ section {
     width: 100%;
   }
   .slider__name {
-    font-size: 24px;
+    font-size: 48px;
   }
   .slider__item {
     padding: 40px 30px;
@@ -951,7 +951,7 @@ section {
     line-height: 60px;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 435px) {
   .navigation {
     padding-top: 25px;
   }
@@ -1020,8 +1020,23 @@ section {
     font-size: 20px;
     margin-bottom: 20px;
   }
+  video {
+    width: 330px;
+  }
 }
 
 #feedback {
   scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 400px) {
+  video{
+    width: 280px;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  video{
+    width: 600px;
+  }
 }
