@@ -1,0 +1,799 @@
+{% load static %}
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>SMM&Psychology</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="{% static 'landing_page/images/favicon/favicon.ico' %}">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'landing_page/css/slick.min.css' %}">
+    <link rel="stylesheet" href="{% static 'landing_page/css/aos.css' %}">
+    <link rel="stylesheet" href="{% static 'landing_page/css/index.css' %}">
+</head>
+<body class="home">
+<!--page-wrapper-->
+<div class="page-wrapper">
+    <header class="header wrapper" id="header" data-aos="fade">
+        <div class="container">
+            <div class="header-logo">
+                <a href="#">
+                    SMM&Psychology
+                </a>
+            </div>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="#" data-id="author">Про авторку</a></li>
+                    <li><a href="#" data-id="why">Чому саме ми</a></li>
+                    <li><a href="#" data-id="course">Як проходить курс</a></li>
+                    <li><a href="#" data-id="step">Модулі</a></li>
+                    <li><a href="#" data-id="speakers">Спікери</a></li>
+                    <li><a href="#" data-id="price">Тарифи</a></li>
+                    <li><a href="#" data-id="reviews">Відгуки</a></li>
+                </ul>
+            </nav>
+            <div class="header-social">
+                <ul>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img loading="lazy"  src="{% static 'landing_page/images/general/youtube.svg' %}" alt="Youtube">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img loading="lazy"  src="{% static 'landing_page/images/general/ins.svg' %}" alt="Instagram">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-btn">
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <!--page-content-->
+    <main class="page-content">
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="hero-info">
+                    <h1 class="hero-title" data-aos="fade-right" data-aos-duration="1800">
+                        SMM&Psychology by ALENA MAER
+                    </h1>
+                    <div class="hero-text" data-aos="fade-right" data-aos-duration="2000">Знайди справу, яка
+                        приносить задоволення і почни сама керувати своїм життям
+                    </div>
+                    <div class="hero-button" data-aos="fade-right" data-aos-duration="2200">
+                        <button type="button" data-id="price" class="btn-scroll btn-secondary">Обрати тариф</button>
+                        <button type="button" data-id="price" class="btn-scroll  btn-primary">Придбати вже</button>
+                    </div>
+                </div>
+                <div class="hero-media" data-aos="fade-down" data-aos-duration="2000">
+                    <img loading="lazy"  src="{% static 'landing_page/images/general/hero-media.png' %}" alt="hero-media">
+                </div>
+            </div>
+            <div class="hero-social">
+                <div class="hero-social__title">Більше про мене :</div>
+                <ul class="hero-social__list">
+                    <li>
+                        <a href="#" target="_blank">
+                            <img loading="lazy"  src="{% static 'landing_page/images/general/youtube.svg' %}" alt="Youtube">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img loading="lazy"  src="{% static 'landing_page/images/general/ins.svg' %}" alt="Instagram">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="author" class="author">
+            <div class="bg-title">Про авторку</div>
+            <div class="container">
+                <div class="author-media" data-aos="fade-down">
+                    <img loading="lazy"  src="{% static 'landing_page/images/general/author.png' %}" alt="author">
+                </div>
+                <div class="author-info">
+                    <h3 class="title-section" data-aos="fade-up">
+                        4+ роки в SMM <br> 100+ учениць наставництва <br> проєкти по всьому світу:
+                        (Італія, Шотландія, Дубай...)
+                    </h3>
+                </div>
+                <div class="author-wrap">
+                    <div data-aos="fade-right" data-aos-duration="1400" class="author-item">
+                        4 роки в маркетингу
+                        5 років у блогінгу
+                        Створила свою команду, відкрила бізнес та навчила більше 100 дівчат Social Media Marketing в
+                        легкості.
+                    </div>
+                    <div data-aos="fade-right" data-aos-duration="1800" class="author-item">
+                        Навчалась та передаю знання від найглобальніших експертів у сфері SMM та розвитку особистого
+                        бренду.
+                        За 4 роки досвіду працювала більше ніж з 60 клієнтами та болгарами з усього світу. Від Італії,
+                        до Праги та Шотландії.
+                    </div>
+                    <div data-aos="fade-right" data-aos-duration="2000" class="author-item">
+                        Навчаю як отримувати результат в роботі одразу та виходити на новий рівень доходу. Обирала бути
+                        провідником у світ SMM через легкість та любов до справи. Та звісно вивчила як психологія
+                        допомагає в роботі просувати себе через особистий бренд.
+                    </div>
+                </div>
+                <div class="author-button">
+                    <h4 data-aos="fade-up">І готова стати твоїм наставником та провідником у новий світ
+                        можливостей!</h4>
+                    <button data-aos="fade-up" type="button" data-id="price" class="btn-scroll btn-primary">Біжу
+                        купувати
+                    </button>
+                    <button data-aos="fade-up" type="button" data-id="price" class="btn-scroll btn-white">Ще в роздумах
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="author-video">
+            <div class="bg"></div>
+            <div class="container">
+                <h2 class="title-section">
+                    Відео від автора
+                </h2>
+                <div class="author-video__media" data-aos="fade-up">
+                    <video poster="{% static 'landing_page/images/general/video-poster.png' %}">
+                        <source src="{% static 'landing_page/images/general/video-alena.mp4' %}" type="video/mp4">
+                        Your browser doesn't support HTML5 video tag.
+                    </video>
+                    <button type="button" class="video-button" data-aos="fade-up">
+                        <span><img loading="lazy"  src="{% static 'landing_page/images/general/play-btn.svg' %}" alt="play-btn"></span>
+                        <span class="video-button__test">Переглянути</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="why" class="why">
+            <div class="container">
+                <h2 class="title-section" data-aos="fade-up">Чому саме ми?</h2>
+                <p class="subtitle-section" data-aos="fade-up">Живі онлайн зустрічі - фундамент нашого навчання</p>
+                <div class="why-wrap">
+                    <div class="why-inner">
+                        <div data-aos="fade-up" class="why-item">
+                            <div class="why-item__media" data-aos="fade-right">
+                                <img loading="lazy"  src="{% static 'landing_page/images/general/why-1.svg' %}" alt="why-icon">
+                            </div>
+                            <h4 class="why-item__title" data-aos="fade-right">Сильне коммьюніті</h4>
+                            <p class="why-item__text" data-aos="fade-right">
+                                Після проходження наставництва у вас відкривається доступ до нашого коммьюніті, де
+                                будуть безкоштовні зустрічі та майстермайнди.
+                            </p>
+                        </div>
+                        <div data-aos="fade-up" class="why-item">
+                            <div class="why-item__media" data-aos="fade-right">
+                                <img loading="lazy"  src="{% static 'landing_page/images/general/why-2.svg' %}" alt="why-icon">
+                            </div>
+                            <h4 class="why-item__title" data-aos="fade-right">Екологічне навчання в легкості</h4>
+                            <p class="why-item__text" data-aos="fade-right">
+                                Наставництво побудоване на командній підтримці та повазі. Ми допоможемо тобі побороти
+                                будь які страхи, бар’єри та блокери в роботі.
+                            </p>
+                        </div>
+                        <div data-aos="fade-up" class="why-item">
+                            <div class="why-item__media" data-aos="fade-right">
+                                <img loading="lazy"  src="{% static 'landing_page/images/general/why-3.svg' %}" alt="why-icon">
+                            </div>
+                            <h4 class="why-item__title" data-aos="fade-right">Ти можеш працювати одразу після
+                                навчання </h4>
+                            <p class="why-item__text" data-aos="fade-right">
+                                На курсі ми працюємо з живими проєктами, практикуємось і виходимо з готовим кейсами, яке
+                                ви зможете надсилати новому клієнту.
+                            </p>
+                        </div>
+                        <div data-aos="fade-up" class="why-item">
+                            <div class="why-item__media" data-aos="fade-right">
+                                <img loading="lazy"  src="{% static 'landing_page/images/general/why-4.svg' %}" alt="why-icon">
+                            </div>
+                            <h4 class="why-item__title" data-aos="fade-right">Об’єднуємо маркетинг на внутрішній
+                                розвиток </h4>
+                            <p class="why-item__text" data-aos="fade-right">
+                                Наш спеціаліст з психології та роки досвіду Альони допоможуть вам почати вже сьогодні та
+                                забути про «а що якщо в мене не вийде».
+                            </p>
+                        </div>
+                    </div>
+                    <div class="why-slider__inner">
+                        <div class="why-slider" data-aos="fade-up">
+                            <div class="slide">
+                                <div class="why-slider__media">
+                                    <img loading="lazy"  src="{% static 'landing_page/images/general/why-slide-img.png' %}"
+                                         alt="why-slide-img">
+                                </div>
+                                <div class="why-slider__info">
+                                    <h5>Точка А:</h5>
+                                    <ul>
+                                        Має ціль навчитися працювати в SMM, вивчити структуру роботи, взяти нові
+                                        проєкти, покращити свої знання
+                                    </ul>
+                                    <h5>Точка Б</h5>
+                                    <ul>
+                                        <li>
+                                            Отримує чіткий структурований план роботи
+                                        </li>
+                                        <li>
+                                            Використовує знання в роботі зі своїм проєктом
+                                        </li>
+                                        <li>
+                                            Працює із закладом відомого блогера у Львові
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="why-slider__media">
+                                    <img loading="lazy"  src="{% static 'landing_page/images/general/result_girl1.jpg' %}"
+                                         alt="why-slide-img">
+                                </div>
+                                <div class="why-slider__info">
+                                    <h5>Точка А:</h5>
+                                    <ul>
+                                        <li>Пошуки майбутньої сфери діяльності</li>
+                                        <li>Відсутність будь-якого досвіду роботи</li>
+                                        <li>Страх відповідальності, страх до нового</li>
+                                        <li>Відсутність доходу</li>
+                                    </ul>
+                                    <h5>Точка Б</h5>
+                                    <ul>
+                                        <li>
+                                            Реалізація себе
+                                        </li>
+                                        <li>
+                                            Робота, яка приносить задоволення
+                                        </li>
+                                        <li>
+                                            Ведення проєкту в АМЕРИЦІ
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="why-slider__media">
+                                    <img loading="lazy"  src="{% static 'landing_page/images/general/result_girl2.jpg' %}"
+                                         alt="why-slide-img">
+                                </div>
+                                <div class="why-slider__info">
+                                    <h5>Точка А:</h5>
+                                    <ul>
+                                        <li>Щойно переїхала в Європу</li>
+                                        <li>Немає жодного доходу</li>
+                                        <li>Шукає себе/свою справу</li>
+                                        <li>Мріє працювати на себе</li>
+                                    </ul>
+                                    <h5>Точка Б</h5>
+                                    <ul>
+                                        <li>
+                                            Отримує чіткий структурований план роботи
+                                        </li>
+                                        <li>
+                                            Використовує знання в роботі зі своїм проєктом
+                                        </li>
+                                        <li>
+                                            Працює із закладом відомого блогера у Львові
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="why-slider__media">
+                                    <img loading="lazy"  src="{% static 'landing_page/images/general/result_girl3.jpg' %}"
+                                         alt="why-slide-img">
+                                </div>
+                                <div class="why-slider__info">
+                                    <h5>Точка А:</h5>
+                                    <ul>
+                                        <li>Працює на роботі, яка просто забирає сили, змушує себе працювати</li>
+                                        <li>Тривожність через низьку енергію, апатія, вигорання</li>
+                                    </ul>
+                                    <h5>Точка Б</h5>
+                                    <ul>
+                                        <li>
+                                            Отримує проєкти в Празі, Україні та Канаді
+                                        </li>
+                                        <li>
+                                            Заробіток під час курсу ~ 1000 €
+                                        </li>
+                                        <li>
+                                            Насолоджується роботою
+                                        </li>
+                                        <li>
+                                            Забула про «тривожність»
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="slider-dots__title">Результати після курсу</span>
+                        <div class="slider-dots">
+                            <div class="slider-dots__list"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="course" class="course">
+            <div class="container">
+                <div class="course-wrap">
+                    <div class="course-media">
+                        {#                        <div class="course-media__title" data-aos="fade-right">Онлайн</div>#}
+                        <div class="course-item" data-aos="fade-up">
+                            <div class="course-item__media"><img loading="lazy"
+                                    src="{% static 'landing_page/images/general/author-1.png' %}"
+                                    alt="author"></div>
+                            <div class="course-item__text">А коли старт навчання? Воно триватиме довго?👀 а можливо буде
+                                дивитись уроки офлайн?
+                            </div>
+                        </div>
+                        <div class="course-item" data-aos="fade-up">
+                            <div class="course-item__media"><img loading="lazy"
+                                    src="{% static 'landing_page/images/general/author-2.png' %}"
+                                    alt="author"></div>
+                            <div class="course-item__text">Багацько запитань, та Старт вже 20 травня! Навчання триватиме
+                                2 місяці та звісно у вас буде можливість переглянути уроки офлайн!
+                            </div>
+                        </div>
+                        <div class="course-item" data-aos="fade-up">
+                            <div class="course-item__media"><img loading="lazy"
+                                    src="{% static 'landing_page/images/general/author-1.png' %}"
+                                    alt="author"></div>
+                            <div class="course-item__text">Супер! Я ще хотіла запитати чи буде можливість оплати
+                                частинами?
+                            </div>
+                        </div>
+                        <div class="course-item" data-aos="fade-up">
+                            <div class="course-item__media"><img loading="lazy"
+                                    src="{% static 'landing_page/images/general/author-2.png' %}"
+                                    alt="author"></div>
+                            <div class="course-item__text">Звісно. Ми хочемо, щоб кожен мав можливість отримати знання
+                                та
+                                почати будувати краще майбутнє.
+                                Саме тому у вас буде можливість оплати частинами від монобанку, та розстрочка від нас -
+                                вам потрібно всього лишень написати нашій менеджерці та вона з усім допоможе ✨
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-desc" data-aos="fade-up">
+                        <h2 class="title-section" data-aos="fade-up">Як проходить курс?</h2>
+                        <div class="course-text" data-aos="fade-up">
+                            <p>
+                                Головна ідея наставництва - дати вам МАКСИМУМ - знань, можливостей, підтримки, живого
+                                спілкування, навіть за тисячі кілометрів. Зустрічі, майстермайнди, спілкування тут і вже
+                                - фундамент нашого навчання.
+                            </p>
+                            <p>
+                                Саме тому ми створили НОВУ програму:
+                                2 місяці
+                                Відео-уроки, онлайн зідзвони, багато ваших питань - та нашої підтримки
+                                5 спікерів-спеціалістів, щоб ви могли вивчити сферу SMM як з боку hard skill тільки
+                                маркетингу, так і з боку дизайну та таргету!
+                                А також програма передбачає Майстермайнди зі спеціалістом з психології.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="step" class="step">
+            <div class="container">
+                <h2 class="title-section" data-aos="fade-up">Модулі</h2>
+                <div class="step-wrap">
+                    <div class="step-item" data-aos="fade-up">
+                        <div class="step-item__title"><span>Модуль 1 - PreStart</span><span
+                                class="btn-accordion"></span></div>
+                        <div class="step-item__text">
+                            Загальна інформація про наступні місяці нашого навчання. Правила наставництва: пояснення по
+                            дз і як краще виконувати, скільки часу приділяти навчанню, як
+                            змінювати і тренувати свою надивленість вже зараз в життєвих ситуаціях
+                        </div>
+                    </div>
+                    <div class="step-item" data-aos="fade-up">
+                        <div class="step-item__title"><span>Модуль 2 - Привіт, SMM 2023</span><span
+                                class="btn-accordion"></span></div>
+                        <div class="step-item__text">
+                            SMM та обов'язки SMM-спеціаліста <br>
+                            Чому SMM сфера тільки набирає обертів. Заробіток в SMM. <br>
+                            Як працює SMM <br>
+                            Найголовніші навички, які варто розвивати вже зараз для результативності в цій сфері <br>
+                            Як розширятись та яких успіхів в цій сфері ти можеш достягти <br>
+                        </div>
+                    </div>
+                    <div class="step-item" data-aos="fade-up">
+                        <div class="step-item__title"><span>Модуль 3 - SMM концепція та стратегія</span><span
+                                class="btn-accordion"></span></div>
+                        <div class="step-item__text">
+                            SMM-концепция та SMM-стратегія
+                            Брифінг проєкта
+                            Бренд-сесія
+                            Позиціонування проєкту
+                        </div>
+                    </div>
+                    <div class="step-item" data-aos="fade-up">
+                        <div class="step-item__title"><span>Модуль 4 - Analysis & Branding</span><span
+                                class="btn-accordion"></span>
+                        </div>
+                        <div class="step-item__text">
+                            Аналіз, тут і нічого додати.
+                            Аналіз ринку, конкурентів та аудиторії, ринку та конкурентів
+                            поступовий план. Та ще багато-багато необхідних аналізів.
+                        </div>
+                    </div>
+                    <div class="step-item" data-aos="fade-up">
+                        <div class="step-item__title"><span>Модуль 5 - Content, Bigideas</span><span
+                                class="btn-accordion"></span></div>
+                        <div class="step-item__text">
+                            Інсайти та BIGIDEAS
+                            Філософія, цінності, місія бренду
+                            Оформлення акаунта бізнеса
+                            Візуальний стержень акаунта
+                            Рубрикатор
+                            Контент-стратегія
+                            Контент-план
+                            Tone of voice.
+                        </div>
+                    </div>
+                    <div class="step-item" data-aos="fade-up">
+                        <div class="step-item__title">
+                            <span>Модуль 6 - Soft Skills SMMника</span><span
+                                class="btn-accordion"></span></div>
+                        <div class="step-item__text">
+                            Стилізація зйомок
+                            Stories маркетинг
+                            Дизайн Stories
+                            Написання постів - копірайтинг.
+                        </div>
+                    </div>
+                    <div class="step-item" data-aos="fade-up">
+                        <div class="step-item__title"><span>Модуль 7 - Promo аккаунту</span><span
+                                class="btn-accordion"></span></div>
+                        <div class="step-item__text">
+                            Постинг, Робота з REELS
+                            Органічне та платне просування
+                            Уроки з таргету
+                            Робота зі статистикою аккаунта
+                        </div>
+                    </div>
+                    <div class="step-item" data-aos="fade-up">
+                        <div class="step-item__title"><span>Модуль 8 - Робота з проєкт, та пошук клієнтів, екологічна робота</span><span
+                                class="btn-accordion"></span></div>
+                        <div class="step-item__text">
+                            План роботи з проєктом клієнта
+                            Клієнти самі знаходять тебе
+                            Workshop вашого акаунта
+                        </div>
+                    </div>
+                    <div class="step-item" data-aos="fade-up">
+                        <div class="step-item__title"><span>Модуль 9 - Страхи, блоки, робота із внутрішнім станом</span><span
+                                class="btn-accordion"></span></div>
+                        <div class="step-item__text">
+                            Робота із внутрішнім станом перед початком роботи
+                            Робота зі спеціалізхстом психології
+                            Майстермаййди та вебінар з психологом
+                        </div>
+                    </div>
+                    <div class="step-item" data-aos="fade-up">
+                        <div class="step-item__title">
+                            <span>Модуль 10 - Особистий бренд, Блогінг, подальший розвиток</span><span
+                                class="btn-accordion"></span></div>
+                        <div class="step-item__text">
+                            Розпаковка особистості для особистого блогу
+                            Імідж та твоє онлайн позиціювання
+                            Ідеї та де їх шукати
+                            Способи монетизації блогу
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="speakers" class="speakers">
+            <div class="container">
+                <h2 class="title-section" data-aos="fade-up">Спікери</h2>
+                <div class="speakers-slider" data-aos="fade-up">
+                    <div class="slide">
+                        <div class="speakers-name">Альона</div>
+                        <div class="speakers-media"><img loading="lazy"  src="{% static 'landing_page/images/general/speakers-1.png' %}"
+                                                         alt="speakers">
+                        </div>
+                        <div class="speakers-type">SMM спеціалістка, інфлюенсерка</div>
+                    </div>
+                    <div class="slide">
+                        <div class="speakers-name">Катерина</div>
+                        <div class="speakers-media"><img loading="lazy"  src="{% static 'landing_page/images/general/kate.jpg' %}"
+                                                         alt="speakers">
+                        </div>
+                        <div class="speakers-type">Спеціалістка з психології</div>
+                    </div>
+                    <div class="slide">
+                        <div class="speakers-name">Руслан</div>
+                        <div class="speakers-media"><img loading="lazy"  src="{% static 'landing_page/images/general/man1.jpg' %}"
+                                                         alt="speakers">
+                        </div>
+                        <div class="speakers-type">Таргетолог</div>
+                    </div>
+                    <div class="slide">
+                        <div class="speakers-name">Антон</div>
+                        <div class="speakers-media"><img loading="lazy"  src="{% static 'landing_page/images/general/man2.jpg' %}"
+                                                         alt="speakers">
+                        </div>
+                        <div class="speakers-type">Таргетолог</div>
+                    </div>
+                    <div class="slide">
+                        <div class="speakers-name">Юлія</div>
+                        <div class="speakers-media"><img loading="lazy"  src="{% static 'landing_page/images/general/Yul.jpg' %}"
+                                                         alt="speakers">
+                        </div>
+                        <div class="speakers-type">Дизайнер</div>
+                    </div>
+                </div>
+                <div class="speakers-slider-nav" data-aos="fade-up">
+                    <div class="prev"><img loading="lazy"  src="{% static 'landing_page/images/general/prev.svg' %}" alt="prev"></div>
+                    <div class="next"><img loading="lazy"  src="{% static 'landing_page/images/general/next.svg' %}" alt="next"></div>
+                </div>
+                <div class="speakers-slider-nav" data-aos="fade-up">
+                    <div class="prev"><img loading="lazy"  src="{% static 'landing_page/images/general/prev.svg' %}" alt="prev"></div>
+                    <div class="next"><img loading="lazy"  src="{% static 'landing_page/images/general/next.svg' %}" alt="next"></div>
+                </div>
+            </div>
+        </section>
+        <section id="price" class="price">
+            <div class="container">
+                <h2 class="title-section" data-aos="fade-up">Тарифи</h2>
+                <div class="price-slider" data-aos="fade-up">
+                    <div class="slide">
+                        <div class="price-item">
+                            <div class="price-item__title">
+                                On my way to Freelance (Start)
+                            </div>
+                            <div class="price-item__price"> 12 700 грн</div>
+                            <div class="price-item__list">
+                                <ul>
+                                    <li>10 Модулів від Альони та спеціалістів у Дизайні, Таргеті, та Психології</li>
+                                    <li>Домашні завдання зі зворотнім зв'язком від кураторів</li>
+                                    <li>Чат з учасницями</li>
+                                    <li>Вебінар від психолога</li>
+                                    <li>5 ММ від Альони по відеозв'язку</li>
+                                    <li>Робота на курсі зі справжнім проєктом</li>
+                                    <li>Пропозиції вакансій робіт з проєктами</li>
+                                </ul>
+                            </div>
+                            <div class="price-item__button"><a href="https://t.me/alennamaer" class="btn-primary">Хочу
+                                придбати</a></div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="price-item">
+                            <div class="price-item__title">
+                                Dream Community (Middle)
+                            </div>
+                            <div class="price-item__price">19 000 грн</div>
+                            <div class="price-item__list">
+                                <ul>
+                                    <li>10 Модулів навчання в групі по відеозв'язку</li>
+                                    <li>Відео-уроки від спікерів з Дизайну, Таргету та Психології</li>
+                                    <li>МайстерМайнд від Психолога з розбором вашого кейсу під час зустрічі</li>
+                                    <li>Домашні завдання зі зворотнім зв'язком від Альони та детальним аналізом
+                                        помилок
+                                    </li>
+                                    <li>Підтримка від Альони в чаті</li>
+                                    <li>Чат-community з учасницями групи та Альоною
+                                        3 ММ від Альони по відеозв'язку
+                                    </li>
+                                    <li>Робота на курсі зі справжнім проєктом
+                                        Пропозиції вакансій робіт з проєктами
+                                    </li>
+                                    <li>Додаткові теми:
+                                        "Як розвивати свій продукт",
+                                        "Як створити свою команду"
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="price-item__button"><a href="https://t.me/alennamaer" class="btn-primary">Хочу придбати</a></div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="price-item">
+                            <div class="price-item__title">
+                                ThePower of Identit <br> (Pro)
+                            </div>
+                            <div class="price-item__price"> 34 000 грн</div>
+                            <div class="price-item__list">
+                                <ul>
+                                    <li>10 Модулів навчання Індивідуально по відеозв'язку</li>
+                                    <li>Домашні завдання зі зворотнім зв'язком від Альони та детальним аналізом
+                                        помилок
+                                    </li>
+                                    <li>Підтримка від Альони в чаті, голосових, відео</li>
+                                    <li>Доступ до чату-community з учасницями групи та Альоною</li>
+                                    <li>3 майстермайнди від Альони по відеозв'язку</li>
+                                    <li>Проходження додаткових духовних практик з психологом про ваші твої страхи,
+                                        бар'єри в розвитку та роботі
+                                    </li>
+                                    <li>Робота на курсі зі справжнім проєктом</li>
+                                    <li>Пропозиції вакансій робіт з проєктами</li>
+                                    <li>Додаткові теми "Як розвивати свій продукт", "Як просувати особистий бренд", "Як
+                                        створити свою команду", “Блогінг у 2023”
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="price-item__button"><a href="https://t.me/alennamaer" class="btn-primary">Хочу придбати</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="reviews" class="reviews">
+            <div class="container">
+                <h2 class="title-section" data-aos="fade-up">Відгуки та результати дівчат</h2>
+                <div class="reviews-slider" data-aos="fade-up">
+                    <div class="slide">
+                        <div class="slide-item">
+                            <img loading="lazy"  data-aos="fade-up" src="{% static 'landing_page/images/general/review1.png' %}"
+                                 alt="slide-img">
+                            <img loading="lazy"  data-aos="fade-up" src="{% static 'landing_page/images/general/review2.png' %}"
+                                 alt="slide-img">
+                        </div>
+                        <div class="slide-item" data-aos="fade-up">
+                            <div class="video-item">
+                                <video controls>
+                                    <source src="{% static 'landing_page/images/general/videoplayback.mp4' %}"
+                                            type="video/mp4">
+                                    Your browser doesn't support HTML5 video tag.
+                                </video>
+                            </div>
+                            <div class="video-item">
+                                <video controls>
+                                    <source src="{% static 'landing_page/images/general/IMG_6803.mp4' %}"
+                                            type="video/mp4">
+                                    Your browser doesn't support HTML5 video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-item" data-aos="fade-up">
+                            <div class="video-item">
+                                <video controls>
+                                    <source src="{% static 'landing_page/images/general/videoplayback.mp4' %}"
+                                            type="video/mp4">
+                                    Your browser doesn't support HTML5 video tag.
+                                </video>
+                            </div>
+                            <div class="video-item">
+                                <video controls>
+                                    <source src="{% static 'landing_page/images/general/IMG_6803.mp4' %}"
+                                            type="video/mp4">
+                                    Your browser doesn't support HTML5 video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <div class="slide-item">
+                            <img loading="lazy"  data-aos="fade-up" src="{% static 'landing_page/images/general/review3.png' %}"
+                                 alt="slide-img">
+                            <img loading="lazy"  data-aos="fade-up" src="{% static 'landing_page/images/general/review4.png' %}"
+                                 alt="slide-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews-slider-nav" data-aos="fade-up">
+                    <div class="prev"><img loading="lazy"  src="{% static 'landing_page/images/general/prev.svg' %}" alt="prev"></div>
+                    <div class="next"><img loading="lazy"  src="{% static 'landing_page/images/general/next.svg' %}" alt="next"></div>
+                </div>
+                <div class="reviews-slider__info" data-aos="fade-up">
+                    більше можна переглянути в Instagram
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-desc">
+                    <h2 class="title-section">Запитання менеджеру</h2>
+                    <p>Наша менеджерка буде рада допомогти вам та відповісти на ваші запитання. </p>
+                    <a href="https://t.me/alennamaer" target="_blank" class="btn-telegram">
+                        <img loading="lazy"  src="{% static 'landing_page/images/general/tg.svg' %}" alt="tg">
+                        Напишіть нам в телеграм
+                    </a>
+                </div>
+                <div class="contact-img">
+                    <img loading="lazy"  src="{% static 'landing_page/images/general/contact-img.png' %}" alt="contact">
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--page-content-->
+    <footer class="footer" id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-logo">
+                    <a href="#">
+                        SMM&Psychology
+                    </a>
+                    <span>
+                    ФОП Шоля Олена Андріївна <br>
+                    ІПН/ЄДРПОУ 3781806844
+                </span>
+                </div>
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="#" data-id="author">Автор курсу</a></li>
+                        <li><a href="#" data-id="why">Чому саме цей курс</a></li>
+                        <li><a href="#" data-id="course">Як проходить курс</a></li>
+                        <li><a href="#" data-id="step">Модулі</a></li>
+                        <li><a href="#" data-id="speakers">Спікери</a></li>
+                        <li><a href="#" data-id="price">Тарифи</a></li>
+                        <li><a href="#" data-id="reviews">Відгуки</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-contact">
+                    <div class="footer-contact__title">Контакти</div>
+                    <ul>
+                        <li><a href="https://t.me/alennamaer" target="_blank"><img loading="lazy"
+                                src="{% static 'landing_page/images/general/tg-w.svg' %}"
+                                alt="tg">Telegram: @alennamaer</a></li>
+                        <li><a href="mailto:info@info@smmandpsychology.com" target="_blank"><img loading="lazy"
+                                src="{% static 'landing_page/images/general/email.svg' %}"
+                                alt="tg">info@smmandpsychology.com</a></li>
+                        <li><a href="tel:+420725914499" target="_blank"><img loading="lazy"
+                                src="{% static 'landing_page/images/general/phone.svg' %}"
+                                alt="tg">+420 725 914 499</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-copy">
+                    Усі права захищені © 2023 SMM&Psychology
+                </div>
+                <div class="footer-link">
+                    <ul>
+                        <li>
+                            <a href="{% url 'privacy_policy' %}">Договір оферти</a>
+                        </li>
+                        {#                        <li>#}
+                        {#                            <a href="privacy-policy.html">Політика конфіденційності</a>#}
+                        {#                        </li>#}
+                        <li class="hidden">
+                            ФОП Шоля Олена Андріївна
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="to-top">
+            <img loading="lazy"  src="{% static 'landing_page/images/general/to-top.svg' %}" alt="to-top">
+        </div>
+    </footer>
+
+</div>
+<!--end-page-wrapper-->
+<div class="hidden">
+    <?xml version="1.0" encoding="utf-8"?>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <symbol viewBox="0 0 10 163" id="ic-down-arrow" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 0v161.645m-4-2.487L5 162l4-2.842"/>
+        </symbol>
+    </svg>
+</div>
+<!-- build:js  ../static/js/lib.js -->
+<script type="text/javascript" src="{% static 'landing_page/js/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'landing_page/js/aos.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'landing_page/js/slick.min.js' %}"></script>
+
+<!-- endbuild -->
+<script type="text/javascript" src="{% static 'landing_page/js/common.js' %}"></script>
+
+
+</body>
+</html>
